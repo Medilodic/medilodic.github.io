@@ -13,7 +13,7 @@ posts = Blueprint('posts', __name__)
 
 
 def generate_text():
-    os.environ["OPENAI_API_KEY"] = "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"
+    os.environ["OPENAI_API_KEY"] = ""
     llm = OpenAI(temperature=0)
     text = "What are suggested posts/blog ideas as of today?"
     return llm(text)
