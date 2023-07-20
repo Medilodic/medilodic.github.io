@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>About Page</h1>
+    <p>{{ project_description }}</p>
+    <p>Founded in {{ year_founded }} by:</p>
+    <ul>
+        {% for founder in founder_names %}
+            <li>{{ founder }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
